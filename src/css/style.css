@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto",Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: #111;
   text-align: center;
 }
@@ -15,7 +15,7 @@ img {
   max-width: 100%;
 }
 
-.logo img{
+.logo img {
   margin: 60px auto;
   width: 250px;
 }
@@ -38,26 +38,28 @@ img {
   cursor: pointer;
 }
 
-
-.user-img img{
+.user-img img {
   border: 2px solid transparent;
   border-radius: 10px;
   margin-bottom: 15px;
-}
-
-.user-img img:hover {
-  border: 2px solid #fff;
   transition: 0.3s ease;
 }
 
-.user-profile:hover h2 {
-  color: #fff;
+.user-profile:hover .user-img img {
+  border: 2px solid #fff;
+  transform: translateY(-10px);
 }
 
 .user-name {
   font-size: 1.2rem;
   font-weight: 400;
   color: #b2b2b2;
+  transition: 0.3s ease;
+}
+
+.user-profile:hover .user-name {
+  color: #fff;
+  transform: translateY(-10px);
 }
 
 .add-img {
@@ -75,10 +77,10 @@ img {
   cursor: pointer;
 }
 
-.add-img:hover {
+.user-profile:hover .add-img {
   border: 2px solid #fff;
-  transition: 0.3s ease;
   opacity: 1;
+  transform: translateY(-10px);
 }
 
 .btn {
@@ -90,6 +92,7 @@ img {
   color: #fff;
   background-color: #111;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
